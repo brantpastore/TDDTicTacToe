@@ -3,11 +3,12 @@ class Input_output
 	attr_accessor :output
 
 	def initialize()
+		@input = $stdin.gets
 		@output = puts
 	end
 
 	def get_input()
-		0
+		input.to_i
 	end
 
 	def print_output(string)
